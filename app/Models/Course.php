@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Student;
 
 class Course extends Model
 {
@@ -15,4 +16,8 @@ class Course extends Model
      ];
 
     public $timestamps = false;
+
+    public function student(){
+        return $this->hasmany(Student::class);
+    }
 }

@@ -14,10 +14,10 @@ use App\Http\Controllers\SchoolController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
-Route::get("/uj-tanulo",[SchoolController::class,"index"]);
-
+Route::get("/", [SchoolController::class, "index"]);
+Route::get("/uj-tanulo",[SchoolController::class,"newStudent"]);
 Route::post("/submit-student", [SchoolController::class,"storeStudent"]);
+Route::get("/keres-tanulo",[SchoolController::class,"showStudent"]);
+Route::get("show-update-student",[SchoolController::class,"showUpdateStudent"]);
+Route::post("/update-student", [SchoolController::class,"updateStudent"]);

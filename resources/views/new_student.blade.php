@@ -17,5 +17,8 @@
         <label for="">Email:</label>
         <input type="text" name="email" placeholder="email">
     </p>
+    <p>
     <button type="submit">Submit</button>
+    </p>
+    
 </form>
