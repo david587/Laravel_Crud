@@ -21,3 +21,4 @@ Route::post("/submit-student", [SchoolController::class,"storeStudent"]);
 Route::get("/keres-tanulo",[SchoolController::class,"showStudent"]);
 Route::get("show-update-student",[SchoolController::class,"showUpdateStudent"]);
 Route::post("/update-student", [SchoolController::class,"updateStudent"]);
+Route::get("/delete-student",[SchoolController::class,"destroy"]);

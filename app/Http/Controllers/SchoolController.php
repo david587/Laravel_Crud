@@ -80,4 +80,12 @@ class SchoolController extends Controller
         $student->save();
         return redirect("/");
     }
+
+    public function destroy(Request $request){
+        //megkeressük a törölni kivánandó rekordot és töröljük
+        $student = Student::where("name",$request->name)->first();
+        $id = $student->id;
+        $student->delete($id);
+        return redirect("/");
+    }
 }

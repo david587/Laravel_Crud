@@ -10,6 +10,11 @@
     <button type="submit">Frissit</button>
 </form>
 
+<form action="delete-student" method="get">
+    <input type="text" name="name">
+    <button type="submit">Töröl</button>
+</form>
+
 
 <table class="table">
     <thead>
